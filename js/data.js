@@ -144,6 +144,41 @@ const PORTFOLIO = {
      featured: true makes the card full-width (use for your 1-2 best projects). */
   projects: [
     {
+      title: "FinCore — Core Payment Processing & Double-Entry Ledger Engine",
+      featured: true,
+      summary:
+        "Production-grade payment gateway and immutable double-entry ledger platform with real-time automated 3-way bank reconciliation.",
+      highlights: [
+        "Built a production-grade core payment processing engine and immutable double-entry ledger using C#, .NET 8, ASP.NET Core, and EF Core to handle payment lifecycles and ledger entries with zero balance variance",
+        "Implemented an automated three-way reconciliation engine using set-based SQL queries to match internal ledger records, PSP reports, and bank statements, detecting and flagging transaction discrepancies",
+        "Integrated idempotent payment APIs, finite lifecycle state machines, and SHA-256 tamper-evident hash chaining to enforce data immutability and prevent duplicate transactions",
+        "Engineered a resilient payment provider integration layer using Polly circuit breakers, outbox event publishing, and HMAC-signed webhooks to handle asynchronous callbacks and network timeouts",
+        "Hardened system security and data privacy through API key SHA-256 hashing, rate limiting, BOLA prevention, maker-checker authorization workflows, and structured audit logging",
+      ],
+      stack: [
+        "C#",
+        ".NET 8",
+        "ASP.NET Core",
+        "EF Core",
+        "SQL Server",
+        "Docker",
+        "Polly",
+        "xUnit",
+        "Testcontainers",
+        "Serilog",
+      ],
+      images: [
+        "assets/images/Fincore.png",
+        "assets/images/Fincore1.png",
+        "assets/images/Fincore2.png",
+        "assets/images/Fincore3.png",
+        "assets/images/Fincore4.png",
+        "assets/images/Fincore5.png",
+      ],
+      repo: "https://github.com/MohamedGamil13/FinCore",
+      demo: "",
+    },
+    {
       title: "RootLens — AI Incident Intelligence Platform",
       featured: true,
       summary:
