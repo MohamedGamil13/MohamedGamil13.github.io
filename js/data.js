@@ -16,12 +16,8 @@ const PORTFOLIO = {
     location: "Giza, Egypt",
     linkedin: "https://www.linkedin.com/in/mohamedgamil13/",
     github: "https://github.com/MohamedGamil13",
-    // PHOTO: put your picture at assets/images/profile.jpg (square, at least 400x400px).
-    // Leave as "" to hide the photo.
     photo: "assets/images/profile.jpeg",
-    // RESUME: drop your PDFs into assets/docs/ and point to them here, or keep the Drive link.
-    resume:
-      "https://drive.google.com/file/d/1bKQK9hSTXt0lgKdKND0lQj7Wxg_UuIdb/view?usp=drive_link",
+    resume: "assets/docs/MohamedGamil.pdf",
   },
 
   about: [
@@ -93,11 +89,12 @@ const PORTFOLIO = {
 
   experience: [
     {
-      role: "Backend Head",
+      role: "Head of Backend(Node.js) Committee",
       org: "ConnectX Student Activity",
-      period: "2026 - Present", // TODO: confirm start date
+      period: "Aug 2026 - Present",
       points: [
-        "TODO: describe what you lead (number of trainees, tracks, sessions, projects).",
+        "Led the committee: prepared and delivered Backend(Node.js) sessions and workshops.",
+        "Mentored trainees, assigned practical tasks, reviewed submissions and evaluated progress.",
       ],
     },
     {
@@ -147,27 +144,32 @@ const PORTFOLIO = {
      featured: true makes the card full-width (use for your 1-2 best projects). */
   projects: [
     {
-      title: "Incident Intelligence Platform",
+      title: "RootLens — AI Incident Intelligence Platform",
       featured: true,
-      summary: "AI-powered incident management backend.",
+      summary:
+        "AI-driven backend for automated microservices root-cause analysis using telemetry graph ranking and LLM reasoning.",
       highlights: [
-        "ASP.NET Core, EF Core and SQL Server with JWT authentication, role-based access control and structured Serilog logging.",
-        "Redis cache-aside caching, Hangfire background jobs and a RabbitMQ event-driven architecture.",
-        "Automated root-cause analysis pipeline using LLM APIs and RAG that produces diagnostic evidence and remediation steps.",
-        "Custom incident state machines with full timeline tracking and automated log-correlation rules.",
+        "FastAPI, PostgreSQL, and Alembic with JWT authentication, role-based access control, and asynchronous background task execution.",
+        "Parquet telemetry ingestion, NetworkX graph-based service dependency ranking, and isolated PostgreSQL database schema segregation.",
+        "Automated root-cause analysis pipeline using LLM APIs and signal detection that produces evidence-grounded diagnostic reports and verified citations.",
+        "Custom incident analysis workflow featuring z-score anomaly detection, log template error-shift analysis, and strict data-leakage prevention safeguards.",
       ],
       stack: [
-        "C#",
-        "ASP.NET Core",
-        "EF Core",
-        "SQL Server",
-        "Redis",
-        "RabbitMQ",
-        "Hangfire",
-        "Serilog",
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Alembic",
+        "Pandas",
+        "NetworkX",
+        "Docker",
+        "Pytest",
       ],
-      image: "assets/images/incident-platform.png",
-      repo: "", // TODO: GitHub repository URL
+      images: [
+        "assets/images/screen1.png",
+        "assets/images/screen2.png",
+        "assets/images/screen3.png",
+      ],
+      repo: "https://github.com/MohamedGamil13/Rootlens-GP",
       demo: "",
     },
     {
@@ -180,9 +182,9 @@ const PORTFOLIO = {
         "Page replacement (LRU, Clock), CPU scheduling and synchronisation with spinlocks and semaphores.",
       ],
       stack: ["C", "Assembly", "Kernel", "Paging", "Synchronisation"],
-      image: "assets/images/fos.png",
-      repo: "",
-      demo: "",
+      images: ["assets/images/OS Arch.jpg", "assets/images/OS Modules.jpg"],
+      repo: "https://github.com/Mohamedsadek12/OS-Project",
+      demo: "https://lnkd.in/p/eBeJY7vz",
     },
     {
       title: "ServiMarket",
@@ -192,8 +194,8 @@ const PORTFOLIO = {
         "GoRouter navigation and BLoC state management; Cloudinary for media uploads.",
       ],
       stack: ["Flutter", "Dart", "Firebase", "BLoC", "Cloudinary"],
-      image: "assets/images/servimarket.png",
-      repo: "",
+      image: "assets/images/ServiMarket.png",
+      repo: "https://github.com/MohamedGamil13/DEPI-GP-Project",
       demo: "",
     },
     {
@@ -204,9 +206,9 @@ const PORTFOLIO = {
         "BFS and DFS for graph traversal and location mapping.",
       ],
       stack: ["C++", "Qt", "Graph Theory"],
-      image: "assets/images/wen-meni-wasalny.png",
-      repo: "",
-      demo: "",
+
+      repo: "https://github.com/mosaberr911/mini-wasslni-project",
+      demo: "https://lnkd.in/p/eAFMaibf",
     },
     {
       title: "Bookly",
@@ -224,36 +226,36 @@ const PORTFOLIO = {
   ],
 
   // TODO: fill in issuer / date / link (credential URL) for each certificate.
-  certificates: [
-    {
-      title: "Cross-Platform Mobile Development Track (Flutter)",
-      issuer: "Digital Egypt Pioneers Initiative (DEPI)",
-      date: "2026",
-      link: "",
-    },
-    {
-      title: "Backend Developer Training (.NET)",
-      issuer: "Information Technology Institute (ITI)",
-      date: "2026",
-      link: "",
-    },
-    {
-      title: "Mastering Flutter: Responsive & Adaptive UI Design",
-      issuer: "TODO",
-      date: "2026",
-      link: "",
-    },
-    {
-      title: "Flutter Advanced Course: BLoC and MVVM Pattern",
-      issuer: "TODO",
-      date: "2025",
-      link: "",
-    },
-    {
-      title: "Flutter and Dart Development Course",
-      issuer: "TODO",
-      date: "2025",
-      link: "",
-    },
-  ],
+  // certificates: [
+  //   {
+  //     title: "Cross-Platform Mobile Development Track (Flutter)",
+  //     issuer: "Digital Egypt Pioneers Initiative (DEPI)",
+  //     date: "2026",
+  //     link: "assets/images/Mohamed Gamil Khalaf Ahmed.jpg",
+  //   },
+  //   {
+  //     title: "Backend Developer Training (.NET)",
+  //     issuer: "Information Technology Institute (ITI)",
+  //     date: "2026",
+  //     link: "",
+  //   },
+  //   {
+  //     title: "Mastering Flutter: Responsive & Adaptive UI Design",
+  //     issuer: "TODO",
+  //     date: "2026",
+  //     link: "",
+  //   },
+  //   {
+  //     title: "Flutter Advanced Course: BLoC and MVVM Pattern",
+  //     issuer: "TODO",
+  //     date: "2025",
+  //     link: "",
+  //   },
+  //   {
+  //     title: "Flutter and Dart Development Course",
+  //     issuer: "TODO",
+  //     date: "2025",
+  //     link: "",
+  //   },
+  // ],
 };
